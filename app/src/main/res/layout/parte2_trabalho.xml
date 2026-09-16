@@ -13,7 +13,7 @@
     android:textSize="30dp"
     android:textColor="#0000ff"
     android:layout_marginTop="10dp"
-    >
+    />
 
     <TextView
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         android:textSize="20dp"
         android:textColor="#cccccc"
 
-        >
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -31,14 +31,14 @@
         android:textSize="20dp"
         android:textColor="#008000"
         android:layout_marginTop="10dp"
-        >
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#000"
 
-        >
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -47,7 +47,7 @@
         android:textColor="#000"
         android:layout_marginTop="20dp"
 
-        >
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,14 +59,14 @@
             android:layout_height="wrap_content"
             android:text="Pequeno"
             android:textSize="20dp"
-            >
+            />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Médio"
             android:textSize="20dp"
-            >
+            />
 
 
         <CheckBox
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:text="Grande"
             android:textSize="20dp"
-            >
+            />
     </LinearLayout>
 
 </LinearLayout>
