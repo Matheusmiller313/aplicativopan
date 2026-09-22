@@ -15,6 +15,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -27,11 +28,29 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.aulaid)
 
         val botao = findViewById<Button>(R.id.btnProxima)
-        val texto = findViewById<EditText>(R.id.editValor)
+        val nota1 = findViewById<EditText>(R.id.editNota1)
+        val nota2 = findViewById<EditText>(R.id.editNota2)
+        val resposta = findViewById<TextView>(R.id.txtResultado)
 
-        botao.text = "teste"
+        val altura = findViewById<EditText>(R.id.altura)
+        val peso = findViewById<EditText>(R.id.peso)
+        val botaoIMC = findViewById<Button>(R.id.btnIMC)
+        val repostaIMC = findViewById<TextView>(R.id.txtResultadoIMC)
+
+
 
         botao.setOnClickListener {
-            botao.text = texto.text
+            resposta.text = "Média é " + ((nota1.text.toString().toFloat() +
+                                nota2.text.toString().toFloat())/2 ).toString()
+
+        }
+
+        botao.setOnClickListener {
+
+            val alturaQuadrado = altura.text.toString().toFloat() * altura.text.toString().toFloat()
+
+            repostaIMC.text = alturaQuadrado / peso.text.toString().toFloat()
+
+
         }
     }}

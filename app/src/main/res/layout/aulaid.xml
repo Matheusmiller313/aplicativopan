@@ -7,17 +7,77 @@
 
 
     >
+ <EditText
+     android:id="@+id/editNota1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="Digite uma nota"
+     android:inputType="number"/>
+ <EditText
+     android:id="@+id/editNota2"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="Digite outra nota"
+     android:inputType="number"/>
 <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Criatividade"
-    android:id="@+id/btnProxima"/>
+    android:text="Calcular média"
+    android:id="@+id/btnProxima"
+    android:gravity="center_horizontal"/>
 
- <EditText
-     android:id="@+id/editValor"
+ <TextView
+     android:id="@+id/txtResultado"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:hint="Digite um valor"
-     android:inputType="number"/>
+     android:textSize="50sp"
+     android:textAlignment="center"
+/>
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+ >
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/altura"
+      android:hint="Digite aqui a sua altura"
+
+      />
+  <EditText
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/peso"
+      android:hint="Digite aqui o seu peso"
+   />
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnIMC"
+          android:hint="Calcular IMC"
+          android:gravity="center_horizontal"
+       />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="50sp"
+         android:textAlignment="center"
+         android:id="@+id/txtResultadoIMC"
+     />
+
+ </LinearLayout>
+
 
 </LinearLayout>
+
+
+
+
+
+
