@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.aulaid)
-
+        setContentView(R.layout.atividadenota)
+/*
         val botao = findViewById<Button>(R.id.btnProxima)
         val nota1 = findViewById<EditText>(R.id.editNota1)
         val nota2 = findViewById<EditText>(R.id.editNota2)
@@ -53,4 +53,51 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-    }}
+
+
+        */
+        val numeroDobro = findViewById<EditText>(R.id.numeroDobro)
+        val botaoDobro = findViewById<Button>(R.id.btnDobro)
+        val respostaDobro = findViewById<TextView>(R.id.respostaDobro)
+
+        botaoDobro.setOnClickListener {
+
+           val numeroDobro = numeroDobro.text.toString().toInt()
+            val dobro = numeroDobro * 2
+
+         respostaDobro.text = dobro.toString()
+
+        }
+
+        val IdadeDias = findViewById<EditText>(R.id.idadeDias)
+        val btnIdade = findViewById<Button>(R.id.btnIdade)
+        val respostaidadeDias = findViewById<TextView>(R.id.respostaidadeDias)
+
+        btnIdade.setOnClickListener {
+
+            val idade = IdadeDias.text.toString().toInt()
+            val idadeemdias = idade * 365
+
+            respostaidadeDias.text = idadeemdias.toString()
+        }
+
+
+        val gorjeta = findViewById<EditText>(R.id.gorjeta)
+        val btngorjeta = findViewById<Button>(R.id.btngorjeta)
+        val respostagroejta = findViewById<TextView>(R.id.respotagorjeta)
+
+        btngorjeta.setOnClickListener {
+
+            val gorjetapaga = gorjeta.text.toString().toDouble()
+            val porcentagem = (gorjetapaga * 0.1).toString()
+
+            respostagroejta.text = porcentagem
+        }
+    }
+
+
+
+
+
+
+}
